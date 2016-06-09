@@ -1,0 +1,149 @@
+<html>
+	<head>
+		<title>
+			Detle.com
+		</title>
+		<link href="detle.css" type="text/css" rel="stylesheet">
+		<script src="jquery.js">
+		</script>
+	</head>
+	<body class="bod">
+			<header class="head">
+				<div class="headdiv">
+					<div class="headdiv_1">
+					</div>
+					<div class="headdiv_2">
+						DE <img class="t2" src="T2.png"> LE
+					</div>
+					<div class="headdiv_3">
+						<input class="login" type="submit" value="REGISTR" id="registr">
+					</div>
+				</div>
+			</header>
+			<div class="boddiv">
+				<div class="logaut" id="logaut">
+					<!--<form action="detle.html" method='post'>-->
+						<div class="logaut_login">
+							<input name="login" class="inputstyle" type="text" placeholder="login">
+						</div>
+						<div class="logaut_passw">
+							<input name="password" class="inputstyle" type="password" placeholder="password">
+						</div>
+						<div class="logaut_buton">
+							<input name="ok" class="ok" type="submit" value="ok">
+						</div>
+					<!--</form>-->
+				</div>
+					<script>
+						$(document).ready (function(){
+						var a='logau';
+							$('#registr').click (function(){
+								if (a=='logau'){
+									$('#logaut').css("display","none");
+									$('.registr').css({"display":"block","margin-top":"25px"});
+									//$('.boddiv').css("background-color","#B59A65");
+									$('.login').val("Login");
+									$('.bod').css('background-image','url("' + 'bodimg1.jpg' + '")');
+									$('.divmap').css("display","none");
+									a='reg';
+								}else{
+									$('#logaut').css("display","block");
+									$('.registr').css({"display":"none","margin-top":"25px"});
+									//$('.boddiv').css("background-color","#B59A65");
+									$('.login').val("REGISTR");
+									$('.bod').css('background-image','url("' + 'bodimg.jpg' + '")');
+									$('.divmap').css("display","none");
+									a='logau';
+								}
+							})
+						})
+					</script>
+			<form  method="post" action="detle.php">
+				<div class="registr" id="registrdiv">
+					<div class="registr1">
+						<div class="regdiv_1">
+							Registr
+						</div>
+							<div class="regdiv_2">
+								<input type="text" name="name1" class="regdiv_2iput" placeholder="name">
+							</div>
+							<div class="regdiv_2">
+								<input type="text" class="regdiv_2iput" placeholder="lastname" name="lastname">
+							</div>
+							<div class="regdiv_2">
+								<input type="email" class="regdiv_2iput" placeholder="email" name="email">
+							</div>
+							<div class="regdiv_2">
+								<input type="password" class="regdiv_2iput" placeholder="password" name="password">
+							</div>
+							<div class="regdiv_2">
+								<input type="password" class="regdiv_2iput" placeholder="repeat password" name="repeatpassword">
+							</div>
+							<div class="regdiv_2">
+								<input type="submit" class="regdiv_ok" value="ok">
+							</div>	
+					</div>
+				</div>
+			</form>
+				<script>
+					$(document).ready (function (){
+						$('.regdiv_ok').click (function(){
+							$('.regdiv_2iput').each(function() {
+								if ($(this).val() == ""){
+									$(this).css('border-color','red');
+								}else{
+									$(this).css('border-color','#000000');
+								}
+							})
+						})
+					})
+				</script>
+				<div class="divmap">
+					<img class="mapimg" src="footr.jpg">
+					<span class="m">
+						M-maps
+					</span>
+					<div class="plusminus">
+						<span class="plus">
+							<img  class="plusimg" src="plus.png">
+						</span>
+						<span class="minus">
+							<img class="plusimg" src="minus.jpg">
+						</span>
+					</div>
+				</div>
+			</div>
+			<footer class="foot">
+				<div class="footdiv">
+					<div class="footdiv_1">
+						<table class="table">
+							<tr>
+								<td><img class="logotipi" src="fb.png"></td>
+								<td><img class="logotipi" src="instagram.png"></td>
+								<td><img class="logotipi" src="twiter.png"></td>
+								<td><img class="logotipi" src="vk.png"></td>
+							</tr>
+							<tr>
+								<td id="map" class="tdtext">Map</td>
+								<script>
+									$(document).ready (function(){
+										$('#map').click (function(){
+											$('.bod').css('background-image','none');
+											$('.bod').css('background-color','#000000');
+											$('#logaut').css("display","none");
+											$('.registr').css("display","none");
+											$('.divmap').css({"display":"block","margin-top":"70px"});										
+										})
+									})
+								</script>
+								<td class="tdtext">Mission</td>
+								<td class="tdtext">History</td>
+								<td class="tdtext">Options</td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+				</div>		
+			</footer>
+	</body>
+</html>
