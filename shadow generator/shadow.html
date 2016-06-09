@@ -1,0 +1,504 @@
+<html>
+	<head>
+		<title>
+			Genarator
+			Genarator
+		</title>
+		<link href="shadow.css" rel="stylesheet" type="text/css">
+		<script src="jquery.js"></script>
+		<script src="jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+		<link rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.css">
+	</head>
+		<body class="bod">
+			<header class="head">
+				Generator Shadow
+			</header>
+			<div class="tabdiv">
+				<span class="tabdiv_1">
+					Generator Shadow
+				</span>
+				<script>
+					$(document).ready (function(){
+						$('.tabdiv_1').click (function(){
+							$('.tabdiv_2').css({'background-Color':'#330412','color':'#ffffff'});
+							$('.tabdiv_1').css({'background-Color':'#ffffff','color':'#330412'});
+							$('.tabdiv_3').css ({'background-Color':'#330412','color':'#ffffff'});
+							$('.boddiv_1').css('display','block');
+							$('.boddiv_2').css('display','block');
+							$('.colordiv_1').css('display','none');
+							$('.boddiv_2div').css({'box-shadow':'5px 5px 5px 5px #000000'});
+							$('.head').text('Generator shadow');
+							$('.calcu').css('display','none');
+							$('.boddiv').css('padding-top','0px');
+							$('.boddiv_1div').css('padding-top','30px');
+						})
+					})
+				</script>
+				<span class="tabdiv_2">
+					Color
+				</span>
+				<script>
+						$('.tabdiv_2').click (function(){
+							$('.tabdiv_1').css({'background-Color':'#330412','color':'#ffffff'});
+							$('.tabdiv_2').css({'background-Color':'#ffffff','color':'#330412'});
+							$('.tabdiv_3').css ({'background-Color':'#330412','color':'#ffffff'});
+							$('.boddiv_2').css('display','block');
+							$('.boddiv_1').css('display','none');
+							$('.colordiv_1').css('display','block');
+							$('.boddiv_2div').css({'box-shadow':'none'});
+							$('.head').text('Color');
+							$('.calcu').css('display','none');
+							$('.boddiv').css('padding-top','0px');
+							$('.boddiv_1div').css('padding-top','10px');
+							$('.box').html(" ");
+						})
+				</script>
+				<span class="tabdiv_3">
+					Calculator
+				</span>
+				<script>
+					$(document).ready (function(){
+						$('.tabdiv_3').click (function(){
+							$('.tabdiv_1').css({'background-Color':'#330412','color':'#ffffff'});
+							$('.tabdiv_2').css({'background-Color':'#330412','color':'#ffffff'});
+							$('.tabdiv_3').css ({'background-Color':'#ffffff','color':'#330412'});
+							$('.calcu').css('display','block');
+							$('.boddiv_1').css('display','none');
+							$('.boddiv_2').css('display','none');
+							$('.colordiv_1').css('display','none')
+							$('.head').text('Calculator');
+							$('.boddiv').css('padding-top','30px');
+						})
+					})
+				</script>
+			</div>
+			<div class="boddiv">
+				<div class="boddiv_1">
+					<div class="boddiv_1div">
+						<div class="boddiv_1divtext">
+							Horizontal Length
+						</div>
+						<div class="boddiv_1divslider" id="slider">
+							<script>
+								$(document).ready (function(){
+									$(function() {
+										$( "#slider" ).slider({
+											min: 1,
+											max: 255,
+											slide: function( event, ui ) {
+												$( ".input1" ).val( ui.value );
+											}
+										});
+									})
+								})
+							</script>
+						</div>	
+						<div class="boddiv_1divinput">
+							<input type="number" class="input1">
+						</div>
+					</div>
+					<div class="boddiv_1div">
+						<div class="boddiv_1divtext">
+							Vertical Lengthpx
+						</div>
+						<div class="boddiv_1divinput" id="slider1">
+							<script>
+								$(document).ready (function(){
+									$(function() {
+										$( "#slider1" ).slider({
+											min: 1,
+											max: 255,
+											slide: function( event, ui ) {
+												$( ".input2" ).val( ui.value );
+											}
+										});
+									})
+								})
+							</script>
+						</div>
+						<div class="boddiv_1divinput">
+							<input type="number" class="input2">
+						</div>
+					</div>
+					<div class="boddiv_1div">
+						<div class="boddiv_1divtext">
+							Blur Radius
+						</div>
+						<div class="boddiv_1divinput" id="slider2">
+							<script>
+								$(document).ready (function(){
+									$(function() {
+										$( "#slider2" ).slider({
+											min: 1,
+											max: 255,
+											slide: function( event, ui ) {
+												$( ".input3" ).val( ui.value );
+											}
+										});
+									})
+								})
+							</script>
+						</div>
+						<div class="boddiv_1divinput">
+							<input type="number" class="input3">
+						</div>
+					</div>
+					<div class="boddiv_1div">
+						<div class="boddiv_1divtext">
+							Spread Radius
+						</div>
+						<div class="boddiv_1divinput" id="slider3">
+							<script>
+								$(document).ready (function(){
+									$(function() {
+										$( "#slider3" ).slider({
+											min: 1,
+											max: 255,
+											slide: function( event, ui ) {
+												$( ".input4" ).val( ui.value );
+											}
+										});
+									})
+								})
+							</script>
+						</div>	
+						<div class="boddiv_1divinput">
+							<input type="number" class="input4">
+						</div>
+					</div>
+					<div class="switchdiv">
+						<label class="switch" id="switch">
+							<input class="switch-input" type="checkbox" />
+							<span class="switch-label" data-on="inset" data-off="outset"></span> 
+							<span class="switch-handle"></span> 
+						</label>
+						<script> 
+								var s="off";
+							$(document).ready (function(){
+								$('#switch').click (function(){
+									if($('.switch-input').is(':checked')){
+										$('.boddiv_2div').css({'box-shadow':'inset 5px 5px 5px 5px #000000'});
+										s="on";
+										$('.submit').click();
+									}else{
+										$('.boddiv_2div').css({'box-shadow':'5px 5px 5px 5px #000000'});
+										s="off";
+										$('.submit').click();
+									}
+								})
+							})
+						</script>
+					</div>
+					<div class="okdiv">
+						<input class="submit" type="submit">
+					</div>
+				</div>
+				<div class="colordiv_1">
+					<div class="boddiv_1div">
+						<span class="boddiv_1divtext">
+							Color Name
+						</span>
+						<span class="boddiv_1divinput">
+							<input id="input1" type="text" placeholder="name">
+						</span>
+					</div>
+					<div class="boddiv_1div">
+						<input class="submit1" type="submit" value="Ok" id="ok1">
+					</div>
+					<script>
+						$(document).ready (function (){
+							$('#ok1').click (function (){
+								var i1=$('#input1').val();
+								$('.boddiv_2div').css('background-color', i1);
+							})
+						})
+					</script>
+					<div class="boddiv_1div">
+						<span class="boddiv_1divtext">
+							Color RGB
+						</span>
+						<span class="boddiv_1divinput">
+							<input id="input2" type="text" placeholder="(255,255,255)">
+						</span>
+					</div>
+					<div class="boddiv_1div">
+						<input class="submit1" type="submit" value="Ok" id="ok2">
+					</div>
+					<script>
+						$(document).ready (function (){
+							$('#ok2').click (function (){
+								var i2=$('#input2').val();
+								$('.boddiv_2div').css('background-color', 'RGB(' + i2 + ')');
+							})
+						})
+					</script>
+					<div class="boddiv_1div">
+						<span class="boddiv_1divtext">
+							Color Namber
+						</span>
+						<span class="boddiv_1divinput">
+							<input id="input3" type="text" placeholder="00asdf (1-6 numb, text)">
+						</span>
+					</div>
+					<div class="boddiv_1div">
+						<input class="submit1" type="submit" value="Ok" id="ok3">
+					</div>
+					<script>
+						$(document).ready (function (){
+							$('#ok3').click (function (){
+								var i2=$('#input3').val();
+								$('.boddiv_2div').css('background-color','#' + i2);
+							})
+						})
+					</script>
+
+				</div>
+				<div class="calcu">
+					<div class="calcudiv">
+						<input id="cinput" class="calcuinput" type="text">
+					</div>
+					<div class="calcudiv">
+						<span>
+							<input id="c7" class="calcuinputn" type="button" value="7">
+							<script>
+								$(document).ready (function(){
+										$('.calcuinputn').mousedown(function(){
+										$(this).css({'-webkit-box-shadow': 'inset -2px 4px 5px 0px rgba(0,0,0,0.75)',
+													'-moz-box-shadow': 'inset -2px 4px 5px 0px rgba(0,0,0,0.75)',
+													'box-shadow': 'inset -2px 4px 5px 0px rgba(0,0,0,0.75)'})
+										})
+										$('.calcuinputn').mouseup(function(){
+										$(this).css({'-webkit-box-shadow': 'none',
+													'-moz-box-shadow': 'none',
+													'box-shadow': 'none'})
+										})
+								})
+								var a, p, b;
+								$(document).ready (function(){
+									$('#c7').click (function(){
+										 a="7";
+										$('#cinput').val($('#cinput').val()+a);
+									
+									})
+								})
+							</script>
+						</span>
+						<span>
+							<input id="c8" class="calcuinputn" type="button" value="8">
+							<script>
+								$(document).ready (function(){
+									$('#c8').click (function(){
+										 a="8";
+										$('#cinput').val($('#cinput').val()+a);
+									})
+								})
+							</script>
+						</span>
+						<span>
+							<input id="c9" class="calcuinputn" type="button" value="9">
+							<script>
+								$(document).ready (function(){
+									$('#c9').click (function(){
+										a="9";
+										$('#cinput').val($('#cinput').val()+a);
+									})
+								})
+							</script>
+						</span>
+						<span>
+							<input id="cplus" class="calcuinputn"type="button" value="+">
+							<script>
+								$(document).ready (function(){
+									$('#cplus').click (function(){
+										p="pluse";
+										b=$('#cinput').val();
+										$('#cinput').val(' ');
+									})
+								})
+							</script>
+						</span>
+					</div>
+					<div class="calcudiv">
+						<span>
+							<input id="c4" class="calcuinputn" type="button" value="4">
+							<script>
+								$(document).ready (function(){
+									$('#c4').click (function(){
+										a="4";
+										$('#cinput').val($('#cinput').val()+a);
+									})
+								})
+							</script>
+						</span>
+						<span>
+							<input id="c5" class="calcuinputn" type="button" value="5">
+							<script>
+								$(document).ready (function(){
+									$('#c5').click (function(){
+										a="5";
+										$('#cinput').val($('#cinput').val()+a);
+									})
+								})
+							</script>
+						</span>
+						<span>
+							<input id="c6" class="calcuinputn" type="button" value="6">
+							<script>
+								$(document).ready (function(){
+									$('#c6').click (function(){
+										a="6";
+										$('#cinput').val($('#cinput').val()+a);
+									})
+								})
+							</script>
+						</span>
+						<span>
+							<input id="cminus" class="calcuinputn"type="button" value="-">
+							<script>
+								$(document).ready (function(){
+									$('#cminus').click (function(){
+										p="minus";
+										b=$('#cinput').val();
+										$('#cinput').val(" ");
+									})
+								})
+							</script>
+						</span>
+					</div>
+					<div class="calcudiv">
+						<span>
+							<input id="c1" class="calcuinputn" type="button" value="1">
+							<script>
+								$(document).ready (function(){
+									$('#c1').click (function(){
+										a="1";
+										$('#cinput').val($('#cinput').val()+a);
+									})
+								})
+							</script>
+						</span>
+						<span>
+							<input id="c2" class="calcuinputn" type="button" value="2">
+							<script>
+								$(document).ready (function(){
+									$('#c2').click (function(){
+										a="2";
+										$('#cinput').val($('#cinput').val()+a);
+									})
+								})
+							</script>
+						</span>
+						<span>
+							<input id="c3" class="calcuinputn" type="button" value="3">
+							<script>
+								$(document).ready (function(){
+									$('#c3').click (function(){
+										a="3";
+										$('#cinput').val($('#cinput').val()+a);
+									})
+								})
+							</script>
+						</span>
+						<span>
+							<input id="cmultiplay" class="calcuinputn"type="button" value="*">
+							<script>
+								$(document).ready (function(){
+									$('#cmultiplay').click (function(){
+										p="multiplay";
+										b=$('#cinput').val();
+										$('#cinput').val(" ");
+									})
+								})
+							</script>
+						</span>
+					</div>
+					<div class="calcudiv">
+						<span>
+							<input id="cket" class="calcuinputn" type="button" value=".">
+							<script>
+								$(document).ready (function(){
+									$('#cket').click (function(){
+										a=".";
+										$('#cinput').val($('#cinput').val()+a);
+									})
+								})
+							</script>
+						</span>
+						<span>
+							<input id="c0" class="calcuinputn" type="button" value="0">
+							<script>
+								$(document).ready (function(){
+									$('#c0').click (function(){
+										a="0";
+										$('#cinput').val($('#cinput').val()+a);
+									})
+								})
+							</script>
+						</span>
+						<span>
+							<input id="cdividy" class="calcuinputn" type="button" value="/">
+							<script>
+								$(document).ready (function(){
+									$('#cdividy').click (function(){
+										p="dividy";
+										b=$('#cinput').val();
+										$('#cinput').val(" ");
+									})
+								})
+							</script>
+						</span>
+						<span>
+							<input id="cecuals" class="calcuinputn"type="button" value="=">
+							<script>
+								$(document).ready (function(){
+									$('#cecuals').click(function(){ 
+										c=$('#cinput').val();
+										if(p=="pluse"){
+											d=parseFloat(b)+parseFloat(c);
+											$('#cinput').val(d);
+										}
+										if(p=="minus"){
+											d=parseFloat(b)-parseFloat(c);
+											$('#cinput').val(d);
+										}
+										if(p=="multiplay"){
+											d=parseFloat(b) * parseFloat(c);
+											$('#cinput').val(d);
+										}
+										if(p=="dividy"){
+											d=parseFloat(b) / parseFloat(c);
+											$('#cinput').val(d);
+										}
+									})
+								})
+							</script>
+						</span>
+					</div>
+				</div>
+				<div class="boddiv_2">
+					<div class="box">
+					</div>
+					<div class="boddiv_2div">
+					<script>
+						$(document).ready (function (){
+							$('.submit').click (function(){
+								 a=$('.input1').val();
+								 b=$('.input2').val();
+								 c=$('.input3').val();
+								 d=$('.input4').val();
+								if(s=="off"){
+									$('.boddiv_2div').css('box-shadow',  a + 'px ' + b +'px '+ c +'px '+ d +'px ');
+									$('.box').html( "box-shadow:" + a +"px" + " " + b +"px" + " " + c + "px" + " " + d + "px" + ";" );
+								}
+								if(s=="on"){
+									$('.boddiv_2div').css('box-shadow','inset'+ " " +  a + 'px ' + b +'px '+ c +'px '+ d +'px ');
+									$('.box').html( "box-shadow: inset" + " " + a + "px" + " " + b + "px" + " " + c + "px" + " " + d + "px" + ";" );
+								}
+							})
+						})
+					</script>
+					</div>			
+				</div>
+			</div>
+		</body>
+</html>
