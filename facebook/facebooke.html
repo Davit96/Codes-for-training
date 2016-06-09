@@ -1,0 +1,401 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			Facebook.com
+		</title>
+	</head>
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+		<script src="jquery.js">
+		</script>
+		<style type="text/css">
+			.bod{
+				margin:0px;
+				font-family:helvetica, arial, sans-serif;
+				background:linear-gradient(white, #D3D8E8);
+			}
+			.hid{
+				background-color:#3F5C9A;
+				height:82px;
+				width:1370px;
+			}
+			.jusi{
+				margin:0 auto;
+				height:69px;
+				width:980px;
+				padding-top:13px;
+			}
+			.jusilef{
+				background-image:url(f1.jpg);
+				background-repeat:no-repeat;
+				display:inline;
+				float:left;
+				width:170px;
+				height:34px;
+				margin-top:17px;
+				cursor:pointer;
+			}
+			.jusirig{
+				width:393px;
+				height:64px;
+				display:inline;
+				float:right;
+			}
+			.trtd_1{
+				font-size:12px;
+				text-align:left;
+				color:#ffffff;
+				padding-bottom:4px;
+				padding:0 20 0 0px;
+				cursor:pointer;
+				font-weight:normal;
+				padding-left:3px;
+			}
+			.trtd_2{
+				border-color:#1d2a5b;
+				padding-bottom:4px;
+				padding:0 20 0 0px;
+				font-size:12px;
+			}
+			.trtd_3{
+				font-size:12px;
+				color:#9daccb;
+				font-weight:normal;
+				cursor:pointer;
+			}
+			.trtd_3a{
+				text-decoration:none;
+				color:#9daccb;
+			}
+			.bodjus{
+				margin:0 auto;
+				width:980px;
+				height:642px;
+			}
+			.bodjusl{
+				display:inline;
+				float:left;
+				width:580px;
+				height:297px;
+			}
+			.bodjusr{
+				display:inline;
+				float:right;
+				width:400px;
+				height:642px;
+			}
+			.bodjuslt{
+				width:450px;
+				height:58px;
+				color:#0e385f;
+				font-size:20px;
+				font-weight:bold;
+				margin-top:40px;
+			}
+			.bodjusrt{
+				width:400px;
+				height:118px;
+				padding:20 0 20 0px;
+			}
+			.bodjusrt1{
+				width:400px;
+				height:48px;
+				font-size:36px;
+				color:#333;
+				font-weight:bold;
+				margin-bottom:5px;
+			}
+			.bodjusrt2{
+				width:400px;
+				height:25px;
+				font-size:19px;
+				color:#141823;
+				font-weight:normal;
+				padding-bottom:45px;
+			}
+			.bodjusri{
+				width:400px;
+				height:434px;
+			}
+			.bodjusri1{
+				width:399px;
+				height:49px;
+			}
+			.bodjusri1l{
+				width:194px;
+				height:39px;
+				display:inline;
+				float:left;
+			}
+			.bodjusri1r{
+				width:194px;
+				height:39px;
+				display:inline;
+				float:right;
+			}
+			.bodjusri2{
+				width:399px;
+				height:39px;
+				padding-bottom:50px;
+			}
+			.bodjusrinp{
+				width:400px;
+				height:59px;
+			}
+			.bodjusrinpt{
+				font-size:18px;
+				font-weight:normal;
+				width:400px;
+				height:26px;
+				color:#141823;
+			}
+			.bodjusrinpt1{
+				width:400px;
+				height:30px;
+			}
+			.bodjusrinpt2{
+				width:195px;
+				height:30px;
+				padding:5px;
+			}
+			.hg{
+				width:400px;
+				height:32px;
+				padding:10 0 0 15px;
+			}
+			.hgtable{
+				font-size:12px;
+				font-weight:normal;
+			}
+			.divtext{
+				width:399px;
+				height:80px;
+				font-size:12px;
+				color:#141823;
+			}
+			.divtextp{
+				color:#777;
+				font-size:11px;
+				width:316px;
+				padding:15 0 0 15px;
+			}
+			.divbtn{
+				width:400px;
+				height:59px;
+				padding-top:20px;
+			}
+			.divbtnspan{
+				padding:0 0 0 15px;
+			}
+			.divbootomtext{
+				width:400px;
+				height:59px;
+			}
+			.divbottom_{
+				width:1370px;
+				height:170px;
+				background-color:#ffffff;
+			}
+			.divbottom_1{
+				width:1200px;
+				height:150px;
+				float:right;
+				
+			}
+			.divbottom_1table{
+				color:#3B7DC1;
+				font-size:12px;
+				font-family:helvetica, arial, sans-serif;
+				text-align:left;
+				cursor:pointer;
+			}
+			.divbottom_1tabletr{
+				border-bottom:1px solid #c1c1c1;
+			}
+			.table_td{
+				padding-top:8px;
+				padding-right:15px;
+				padding-bottom:0px;
+			}
+		</style>
+			<body class="bod">
+				<div class="hid">
+					<div class="jusi">
+						<div class="jusilef">
+						</div>
+						<div class="jusirig">
+							<table>
+								<tr>
+									<td class="trtd_1">Эл. адрес или телефон</td>
+									<td class="trtd_1">Пароль</td>
+								</tr>
+								<tr>
+									<td class="trtd_2"><input class="form-horizontal" type="email" id="emai"></td>
+									<td class="trtd_2"><input class="form-horizontal" type="password" id="pass"></td>
+									<td><input type="submit" class="btn btn-primary" value="Вход" id="btnlogut"></td>
+										<script>
+											$(document).ready (function (){
+												$('#btnlogut').click(function(){
+													var a=$('#emai').val();
+													var c=$('#pass').val();
+													var b=a.lastIndexOf("@");
+														if(b!=-1){
+															$('#emai').css("border-color","#1d2a5b");
+														}else{
+															$('#emai').css("border-color","red");
+														}
+														if(c==""){
+															$('#pass').css("border-color","red");
+														}else{
+															$('#pass').css("border-color","#1d2a5b");
+														}
+												})
+											})
+										</script>
+								</tr>
+								<tr>
+									<td class="trtd_3"> <input type="checkbox">Не выходить из системы</td>
+									<td  class="trtd_3">
+										<a class="trtd_3a" href="/recover/initiate?lwv=111">
+											Забыли аккаунт?
+										</a>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+					<div class="bodjus">
+						<div class="bodjusl">
+							<div class="bodjuslt">
+								Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.
+								<img src="f2.jpg">
+							</div>
+						</div>
+						<div class="bodjusr">
+							<div class="bodjusrt">
+								<div class="bodjusrt1">
+									Регистрация
+								</div>
+								<div class="bodjusrt2">
+									Это бесплатно и всегда будет бесплатнo.
+								</div>
+								<div class="bodjusri">
+									<div class="bodjusri1">
+										<div class="bodjusri1l">
+											<input class="form-control" type="text" placeholder="Имя">
+										</div>
+										<div class="bodjusri1r">
+											<input class="form-control" type="text" placeholder="Фамилия">
+										</div>
+									</div>
+									<div class="bodjusri2">
+										<input type="text" class="form-control" placeholder="Номер мобильного телефона или эл. адрес">
+									</div>
+									<div class="bodjusri2">
+										<input type="text" class="form-control" placeholder="Повторно введите номер мобильного телефона или эл. адрес">
+									</div>
+									<div class="bodjusri2">
+										<input type="text" class="form-control" placeholder="Новый пароль">
+									</div>
+									<div class="bodjusrinp">
+										<div class="bodjusrinpt">
+											День рождения
+										</div>
+										<div class="bodjusrinpt1">
+											<span class="bodjusrinpt2">
+												<select >
+													<option>День</option>
+												</select>
+												<select>
+													<option>Месяц</option>
+												</select>
+												<select>
+													<option>Год</option>
+												</select>
+											</span>
+											<span style="float:right; margin-right:40px; height:26px; width:160px;text-decoration:none; font-size:11px;">
+												<a  href="#" ajaxify="/help/ajax/reg_birthday/?xui">
+													Для чего необходимо указывать дату рождения?
+												</a>
+											</span>
+										</div>
+										<div class="hg">
+											<table class="hgtable">
+												<tr>
+													<td style="padding-right:20px;"><input type="radio"> Женский </td>
+													<td><input type="radio"> Мужской </td>
+												</tr>
+											</table>
+										</div>
+										<div class="divtext">
+											<p class="divtextp">
+												Нажимая кнопку «Регистрация», вы соглашаетесь с нашими Условиями использования  и подтверждаете, что ознакомились с нашей 
+												Политикой использования данных, включая использование файлов «cookie».
+											</p>
+										</div>
+										<div class="divbtn">
+											<span class="divbtnspan">
+												<input style="width:194px; font-size:19px; font-weight:bold;" value="Регистрация" type="button" class="btn btn-success">
+											</span>
+										</div>
+										<hr>
+										<div class="divbootomtext">
+											Создать Страницу  знаменитости, музыкальной группы или компании.
+										</div>
+									</div>
+								</div>
+								</div>
+							</div>
+					</div>
+					<div class="divbottom_">
+						<div class="divbottom_1">
+							<table class="divbottom_1table">
+								<tr class="divbottom_1tabletr">
+									<td class="table_td"> Русский </td>
+									<td class="table_td"> English (UK) </td>
+									<td class="table_td"> Հայերեն </td>
+									<td class="table_td"> Français (France) </td>
+									<td class="table_td"> Deutsch </td>
+									<td class="table_td"> العربية </td>
+									<td class="table_td"> Español (España) </td>
+									<td class="table_td"> Türkçe </td>
+									<td class="table_td"> Português (Brasil) </td>
+									<td class="table_td"> Italiano</td>
+									<td class="table_td"> ... </td>
+								</tr>
+								<tr>
+									<td class="table_td"> Регистрация </td>
+									<td class="table_td"> Вход </td>
+									<td class="table_td"> Messenger </td>
+									<td class="table_td"> Facebook Lite </td>
+									<td class="table_td"> Push-уведомления </td>
+									<td class="table_td"> Найти друзей </td>
+									<td class="table_td"> Визитки </td>
+									<td class="table_td"> Люди </td>
+									<td class="table_td"> Страницы  </td>
+									<td class="table_td"> Места</td>
+									<td class="table_td"> Игры </td>
+								</tr>
+								<tr>
+									<td class="table_td"> Местонахождения </td>
+									<td class="table_td"> Знаменитости </td>
+									<td class="table_td"> Группы </td>
+									<td class="table_td"> О нас </td>
+									<td class="table_td"> Создать рекламу </td>
+									<td class="table_td"> Создать Страницу </td>
+									<td class="table_td"> Разработчикам </td>
+									<td class="table_td"> Вакансии </td>
+									<td class="table_td"> Конфиденциальность  </td>
+									<td class="table_td"> Файлы «cookie»</td>
+									<td class="table_td"> Выбор рекламы </td>
+								</tr>
+								<tr>
+									<td class="table_td"> Условия использования </td>
+									<td class="table_td"> Помощь </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+			</body>
+</html>
