@@ -1,0 +1,274 @@
+<html>
+	<head>
+		<title>
+			GAME
+		</title>
+		<style type="text/css">
+			.h{
+				display:none;
+			}
+			.bod{
+				background-image:url(grasses68.gif);
+				margin:0px;
+				width:100%;
+				height:100%;
+				overflow:hidden;
+				position:absolute;
+			}
+			.div_1{
+				margin:0 auto;
+				width:18%;
+				height:100%;
+				background-image:url(asphalt.jpg);
+			}
+			.div_2{
+				display:inline-block;
+				border-left:4px solid #ffffff;
+				float:left;
+				width:49%;
+				height:100%;
+			}
+			.div_3{
+				position:absolute;
+				display:inline-block;
+				width:1%;
+				height:80%;
+			}
+			.div_pol1{
+				position:relative;
+				top:20px;
+				width:100%;
+				height:20%;
+				background-color:#ffffff;
+				display:inline-block;
+			}
+			.div_pol2{
+				position:relative;
+				top:100px;
+				width:100%;
+				height:20%;
+				background-color:#ffffff;
+				display:inline-block;
+			}
+			.div_pol3{
+				position:relative;
+				top:200px;
+				width:100%;
+				height:20%;
+				background-color:#ffffff;
+				display:inline-block;
+			}
+			.div_pol4{
+				position:relative;
+				top:300px;
+				width:100%;
+				height:20%;
+				background-color:#ffffff;
+				display:inline-block;
+			}
+			.div_3a{
+				position:absolute;
+				display:inline-block;
+				width:1%;
+				height:80%;
+			}
+			.div_4{
+				display:inline-block;
+				border-right: 4px solid #ffffff;
+				float:right;
+				width:47%;
+				height:100%;
+			}
+			.car{
+				display:inline-block;
+				background-image:url(car.jpg);
+				background-repeat:no-repeat;
+				width:105px;
+				height:105px;
+				background-size: cover;
+				position:absolute;
+				top:550px;
+				}
+			.car_bes{
+				display:inline-block;
+				background-image:url(carbes.jpg);
+				background-repeat:no-repeat;
+				width:105px;
+				height:105px;
+				background-size: cover;
+				position:absolute;
+				top:-1000px;
+			}
+			.car_bes1{
+				display:inline-block;
+				background-image:url(carbes1.png);
+				background-repeat:no-repeat;
+				width:70px;
+				height:105px;
+				background-size: contain;
+				position:absolute;
+				top:-1500px;
+				margin-left:30px;
+			}
+			.divl{
+				display:inline-block;
+				float:left;
+				width:41%;
+				height:100%;
+			}
+			.divrig{
+				display:inline-block;
+				float:right;
+				width:41%;
+				height:100%;
+			}
+			.divr{
+				position:absolute;
+				display:inline-block;
+				width:8%;
+				height:90%;
+				margin-left:470px;
+			}
+			.divra{
+				position:absolute;
+				display:inline-block;
+				width:8%;
+				height:90%;
+				margin-left:470px;
+			}
+			.divrig1{
+				position:absolute;
+				display:inline-block;
+				width:8%;
+				height:90%;
+				margin-left:0px;
+			}
+			.divrig2{
+				position:absolute;
+				display:inline-block;
+				width:8%;
+				height:90%;
+				margin-left:0px;
+			}
+			
+			
+			.tree1{
+				background-image:url(tree.jpg);
+				background-repeat:no-repeat;
+				background-size:100px;
+				position:absolute;
+				width:150px;
+				height:150px;
+				top:100px;
+				
+			}
+			
+			.tree3{
+				background-image:url(tree2.jpg);
+				background-repeat:no-repeat;
+				background-size:100px;
+				position:absolute;
+				width:150px;
+				height:150px;
+				top:330px;
+				
+			}
+			.tree4{
+				background-image:url(tree1.jpg);
+				background-repeat:no-repeat;
+				background-size:100px;
+				position:absolute;
+				width:150px;
+				height:150px;
+				top:650px;
+				
+			}
+		</style>
+		<script src="game.js">
+		</script>
+		<script src="jquery.js">
+		</script>
+	</head>
+		<body onkeydown="bod_1(event)" class="bod" style="background-position-y:0px" id="bod">
+		<!--<div id="kp" style="height:100px;background-color:red;">
+		</div>-->
+			<script>
+				$(document).ready(function(){
+					$('#bod').click(function(){
+					//$('#asphalt').toggleClass('h');
+					//$('#asphalt').fadeOut(2500);
+					//$('#kp').animate({height:500},2000);
+					
+					
+					})
+				})
+			</script>
+			<div class="divl">
+				<div class="divra" style="top:-800px" id="treea">
+					<span class="tree1">
+					</span>
+					<span class="tree3">
+					</span>
+					<span class="tree4">
+					</span>
+				</div>
+				<div class="divr" style="top:0px" id="tree">
+					<span class="tree1">
+					</span>
+					<span class="tree3">
+					</span>
+					<span class="tree4">
+					</span>
+				</div>
+			</div>
+				<div class="div_1" id="asphalt" >
+					<div class="div_2" id="div_2">
+						<span style="top:-1000px" class="car_bes" id="carbes">
+						</span>
+						<span style="top:550px; left:580px;" id="car" class="car">
+						</span>
+					</div>
+					<div class="div_3" style="top:100px" id="div_3">
+						<div class="div_pol1">
+						</div>
+						<div class="div_pol2">
+						</div>
+						<div class="div_pol3">
+						</div>
+					</div>
+					<div class="div_3a" style="top:-700px" id="div_3a" >
+						<div class="div_pol1">
+						</div>
+						<div class="div_pol2">
+						</div>
+						<div class="div_pol3">
+						</div>
+						<div class="div_pol4">
+						</div>
+						
+					</div>
+					<div  class="div_4" id="div_4">
+						<span class="car_bes1" style="top:-1500px" id="carbes1">
+						</span>
+					</div>
+				</div>
+					<div class="divrig">
+						<div class="divrig1" style="top:-1000px" id="divrig1">
+							<span class="tree1">
+							</span>
+							<span class="tree3">
+							</span>
+							<span class="tree4">
+							</span>
+						</div>
+						<div class="divrig2" style="top:200px" id="divrig2">
+							<span class="tree1">
+							</span>
+							<span class="tree3">
+							</span>
+							<span class="tree4">
+							</span>
+						</div>
+					</div>
+		<body>
+</html>
